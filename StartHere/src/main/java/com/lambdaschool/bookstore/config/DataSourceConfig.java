@@ -14,9 +14,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 public class DataSourceConfig
 {
     private static final Logger logger = LoggerFactory.getLogger(BookstoreApplication.class);

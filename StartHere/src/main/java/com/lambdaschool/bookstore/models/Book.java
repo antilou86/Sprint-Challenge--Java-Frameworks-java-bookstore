@@ -38,10 +38,6 @@ public class Book extends Auditable {
 
     //many to many declaration
     @ManyToMany(mappedBy = "books")
-    @JoinTable( name="wrote",
-            joinColumns = {@JoinColumn(name="bookid")},
-            inverseJoinColumns = {@JoinColumn(name = "authorid")}
-    )
     @JsonIgnoreProperties("books")
 
     private List<Author> authors;
