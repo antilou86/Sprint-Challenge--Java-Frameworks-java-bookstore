@@ -43,7 +43,7 @@ public class Book extends Auditable {
             inverseJoinColumns = {@JoinColumn(name = "authorid")}
     )
     @JsonIgnoreProperties("books")
-    
+
     private List<Author> authors;
 
     //default constructor
