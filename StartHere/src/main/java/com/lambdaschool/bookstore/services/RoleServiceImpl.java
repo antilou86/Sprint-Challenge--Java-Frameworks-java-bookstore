@@ -7,12 +7,14 @@ import com.lambdaschool.bookstore.models.UserRoles;
 import com.lambdaschool.bookstore.repository.RoleRepository;
 import com.lambdaschool.bookstore.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 @Service(value = "roleService")
 public class RoleServiceImpl implements RoleService
 {

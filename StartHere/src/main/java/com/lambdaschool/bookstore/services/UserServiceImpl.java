@@ -168,7 +168,7 @@ public class UserServiceImpl implements UserDetailsService, UserService
         if (rolerepos.checkUserRolesCombo(userid, roleid)
                      .getCount() > 0)
         {
-            rolerepos.deleteUserRoles(userid, roleid);
+            rolerepos.deleteUserRolesById(userid);
         } else
         {
             throw new ResourceNotFoundException("Role and User Combination Does Not Exists");
