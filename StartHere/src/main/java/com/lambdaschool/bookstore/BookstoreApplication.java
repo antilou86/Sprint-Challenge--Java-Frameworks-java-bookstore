@@ -14,9 +14,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @EnableJpaAuditing
 @SpringBootApplication
-public class StartHereApplication
+public class BookstoreApplication
 {
-    private static final Logger logger = LoggerFactory.getLogger(StartHereApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(BookstoreApplication.class);
     private static boolean stop = false;
 
     @Autowired
@@ -38,7 +38,7 @@ public class StartHereApplication
 
         if (!stop)
         {
-            ApplicationContext ctx = SpringApplication.run(StartHereApplication.class, args);
+            ApplicationContext ctx = SpringApplication.run(BookstoreApplication.class, args);
 
             DispatcherServlet dispatcherServlet = (DispatcherServlet) ctx.getBean("dispatcherServlet");
             dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
