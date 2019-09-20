@@ -11,7 +11,7 @@
     <groupId>com.lambdaschool</groupId>
     <artifactId>starthere</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>starthere</name>
+    <name>bookstore</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -136,7 +136,7 @@
 
     <build>
 <!--        <finalName>${project.artifactId}</finalName>-->
-        <finalName>jrmmba-oauthmin</finalName>
+        <finalName>antilou86-bookstore</finalName>
 
         <plugins>
             <plugin>
@@ -155,7 +155,7 @@
                     <includeTarget>false</includeTarget>
                     <includes>
                         <!--   For windows      <include>${project.build.directory}\${project.build.finalName}.jar</include>-->
-                        <include>${project.build.directory}/${project.build.finalName}.jar</include>
+                        <include>${project.build.directory}\${project.build.finalName}.jar</include>
                     </includes>
                     <jdkVersion>${java.version}</jdkVersion>
                     <processTypes>
