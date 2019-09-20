@@ -21,8 +21,8 @@ public class Swagger2Config
     public Docket api()
     {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                                                      //                .apis(RequestHandlerSelectors.any())
-                                                      .apis(RequestHandlerSelectors.basePackage("com.lambdaschool.oauthmin"))
+                                                      .apis(RequestHandlerSelectors.any())
+                                                      //.apis(RequestHandlerSelectors.basePackage("com.lambdaschool.oauthmin"))
                                                       .paths(PathSelectors.any())
                                                       .build()
                                                       .useDefaultResponseMessages(false) // Allows only my exception responses
@@ -32,9 +32,9 @@ public class Swagger2Config
 
     private ApiInfo apiEndPointsInfo()
     {
-        return new ApiInfoBuilder().title("Java Spring Back End Starting Project")
-                                   .description("A starting application for developing Java Spring Back End Projects")
-                                   .contact(new Contact("John Mitchell", "http://www.lambdaschool.com", "john@lambdaschool.com"))
+        return new ApiInfoBuilder().title("Java Spring Back End Final Sprint Project")
+                                   .description("final project before build week for Lambda School back end course.")
+                                   .contact(new Contact("Luis Guzman", "http://www.github.com/antilou86", "antilou86@gmail.com"))
                                    .license("MIT")
                                    .licenseUrl("https://github.com/LambdaSchool/java-starthere/blob/master/LICENSE")
                                    .version("1.0.0")
